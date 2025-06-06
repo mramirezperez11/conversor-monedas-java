@@ -1,25 +1,28 @@
-# Conversor de Monedas en Java / Currency Converter in Java
+# Conversor de Monedas en Java con API / Currency Converter in Java with API
 
 ## 📌 Español
 
-Este proyecto es un **conversor de monedas** simple hecho en **Java** para ejecutarse por consola. Permite ingresar una cantidad en dólares (USD) y convertirla a una moneda destino como **euros (EUR)**, **pesos mexicanos (MXN)** o **yenes japoneses (JPY)** utilizando tasas de cambio simuladas.
+Este proyecto es un **conversor de monedas** en **Java** que obtiene tasas de cambio **en tiempo real** desde [ExchangeRate-API](https://www.exchangerate-api.com/). Se ejecuta por consola y permite convertir de dólares estadounidenses (USD) a otras monedas.
 
 ### 🚀 ¿Cómo ejecutar?
 
-1. Asegúrate de tener Java instalado (JDK 17+).
-2. Abre una terminal en la carpeta del proyecto.
-3. Compila el archivo:
-   ```bash
-   javac ConversorMonedas.java
-   ```
-4. Ejecuta el programa:
-   ```bash
-   java ConversorMonedas
-   ```
+1. Asegúrate de tener Java (JDK 17+) instalado.
+2. Descarga la librería [json-20240303.jar](https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar) y colócala en la misma carpeta del archivo `.java`.
+3. Guarda tu clave desde ExchangeRate-API en el código fuente (`apiKey`).
+4. Ejecuta el archivo `run_api.bat` para compilar y ejecutar automáticamente.
+
+### ▶️ Scripts incluidos
+- `run_api.bat`: compila y ejecuta el programa con conexión a la API.
+- `limpiar.bat`: elimina archivos `.class` generados.
+- `ejecutar.bat`: ejecuta versión local sin conexión a API (opcional).
+
+### 💱 Monedas soportadas
+- EUR, MXN, JPY, GBP, CAD, ARS, BRL, CLP, CRC, COP (puedes ampliar más)
 
 ### 🛠 Tecnologías
-- Java 17 o superior
-- Ejecutado por consola (PowerShell, Git Bash, CMD)
+- Java 17+
+- Librería org.json (json-20240303.jar)
+- API externa ExchangeRate-API
 
 ### 👤 Autor
 Creado por [mramirezperez11](https://github.com/mramirezperez11)
@@ -28,46 +31,27 @@ Creado por [mramirezperez11](https://github.com/mramirezperez11)
 
 ## 📌 English
 
-This project is a simple **currency converter** built in **Java**, intended to run on the command line. It allows the user to enter an amount in USD and convert it to other currencies like **euros (EUR)**, **Mexican pesos (MXN)** or **Japanese yen (JPY)** using simulated exchange rates.
+This project is a **currency converter** in **Java** that retrieves **real-time exchange rates** from [ExchangeRate-API](https://www.exchangerate-api.com/). It runs in the terminal and converts USD to other currencies.
 
-### 🚀 How to run?
+### 🚀 How to run
 
 1. Make sure Java (JDK 17+) is installed.
-2. Open a terminal in the project folder.
-3. Compile the file:
-   ```bash
-   javac ConversorMonedas.java
-   ```
-4. Run the program:
-   ```bash
-   java ConversorMonedas
-   ```
+2. Download [json-20240303.jar](https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar) and place it in the same folder as the `.java` file.
+3. Insert your API key from ExchangeRate-API into the source code.
+4. Run `run_api.bat` to compile and execute automatically.
+
+### ▶️ Included scripts
+- `run_api.bat`: compiles and runs the program with live exchange data.
+- `limpiar.bat`: removes generated `.class` files.
+- `ejecutar.bat`: runs the offline (simulated rate) version (optional).
+
+### 💱 Supported currencies
+- EUR, MXN, JPY, GBP, CAD, ARS, BRL, CLP, CRC, COP (you can expand this list)
 
 ### 🛠 Technologies
-- Java 17 or higher
-- Runs in terminal (PowerShell, Git Bash, CMD)
-
----
-
-## 📥 Clonar el repositorio
-
-Puedes clonar este proyecto con:
-
-```bash
-git clone https://github.com/mramirezperez11/conversor-monedas-java.git
-
-
-> ✅ Esto muestra el comando directamente para copiar.
-
----
-
-### 🔘 Opción 2: Botón de GitHub visual (Markdown con badge)
-
-También puedes añadir este botón al inicio o final del README:
-
-```markdown
-[![Ver en GitHub](https://img.shields.io/badge/GitHub-ver%20repositorio-black?logo=github)](https://github.com/mramirezperez11/conversor-monedas-java)
-
+- Java 17+
+- org.json library (json-20240303.jar)
+- External API: ExchangeRate-API
 
 ### 👤 Author
 Created by [mramirezperez11](https://github.com/mramirezperez11)
