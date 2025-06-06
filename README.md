@@ -47,5 +47,27 @@ This project is a simple **currency converter** built in **Java**, intended to r
 - Java 17 or higher
 - Runs in terminal (PowerShell, Git Bash, CMD)
 
+---
+
+## 📥 Clonar el repositorio
+
+Puedes clonar este proyecto con:
+
+```bash
+git clone https://github.com/mramirezperez11/conversor-monedas-java.git
+
+
+> ✅ Esto muestra el comando directamente para copiar.
+
+---
+
+### 🔘 Opción 2: Botón de GitHub visual (Markdown con badge)
+
+También puedes añadir este botón al inicio o final del README:
+
+```markdown
+[![Ver en GitHub](https://img.shields.io/badge/GitHub-ver%20repositorio-black?logo=github)](https://github.com/mramirezperez11/conversor-monedas-java)
+
+
 ### 👤 Author
 Created by [mramirezperez11](https://github.com/mramirezperez11)
